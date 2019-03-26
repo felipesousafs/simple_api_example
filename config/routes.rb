@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  resources :urls
-  resources :contents
-  resources :content_types
-  resources :pages
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  jsonapi_resources :pages
+  jsonapi_resources :contents #Optional
+  jsonapi_resources :urls #Optional
+  jsonapi_resources :content_types #Optional
+
 end
